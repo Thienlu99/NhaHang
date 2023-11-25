@@ -55,7 +55,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
                         <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
                         <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
                         <a href="#" class="nav-item nav-link">Menu</a>
@@ -67,7 +67,7 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div> -->
-                        <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                        <a href="contact.html" class="nav-item nav-link active">Liên hệ</a>
                     </div>
                     <a href="" class="btn btn-primary py-2 px-4">Đặt bàn</a>
                 </div>
@@ -104,15 +104,15 @@
                     <div class="col-12">
                         <div class="row gy-4">
                             <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Đặt bàn</h5>
                                 <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
                             </div>
                             <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">General</h5>
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Tổng quan</h5>
                                 <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
                             </div>
                             <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Kỹ thuật</h5>
                                 <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
                             </div>
                         </div>
@@ -129,30 +129,36 @@
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Nhập họ tên">
+                                            <label for="name">Họ tên</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Nhập Email">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại">
+                                            <label for="phone">Số điện thoại</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="subject" placeholder="Tiêu đề">
+                                            <label for="subject">Tiêu đề</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <textarea class="form-control" placeholder="Nội dung" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Nội dung</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Gửi Email</button>
                                     </div>
                                 </div>
                             </form>
@@ -190,20 +196,19 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Mở cửa</h4>
+                        <h5 class="text-light fw-normal">Cả ngày</h5>
                         <p>09AM - 09PM</p>
-                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <h5 class="text-light fw-normal">Chủ nhật</h5>
                         <p>10AM - 08PM</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Bản tin</h4>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Google map</h4>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Your email">
-                            <button type="button"
-                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15260.494573711629!2d107.1054963!3d17.0176042!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140ddbe1999f96f%3A0xc965bbf81ce4725c!2zTsaw4bubYyBN4bqvbSBUw7luZyBWw6Ju!5e0!3m2!1svi!2s!4v1700884257907!5m2!1svi!2s"
+                                 style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
